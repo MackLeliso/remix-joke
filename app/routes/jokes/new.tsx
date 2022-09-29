@@ -21,11 +21,7 @@ export const action: ActionFunction = async ({
   const fields = { name, content };
 
   const joke = await db.joke.create({ data: fields });
-<<<<<<< HEAD
-  // return redirect(`/jokes/${joke.id}`);
-=======
   return redirect(`/jokes/${joke.id}`);
->>>>>>> 5da2325e6b8f832c1e2a740cec21f2658c115d8a
 };
 
 export default function NewJokeRoute() {
